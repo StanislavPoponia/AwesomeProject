@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
+
 import Home from './Screen/HomePages/Home';
 import LoginScreen from './Screen/AuthPages/LoginScreen';
 import RegistrationScreen from './Screen/AuthPages/RegistrationScreen';
@@ -21,7 +22,7 @@ export default function App() {
           <MainStack.Screen name="Login" component={LoginScreen} />
           <MainStack.Screen name="Home" component={Home} />
         </MainStack.Navigator>
-        {/* <StatusBar style="auto" /> */}
+        <StatusBar style="auto" />
       </NavigationContainer>
     </View>
   );
